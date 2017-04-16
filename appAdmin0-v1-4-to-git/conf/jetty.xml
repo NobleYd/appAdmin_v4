@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="jettyServer" class="com.app.jetty.JettyServer" init-method="start" destroy-method="stop">
+		<property name="war">
+			<value>war</value>
+		</property>
+		<property name="port">
+			<value>8888</value>
+		</property>
+		<property name="requestLogFile">
+			<value>./logs/access_log.yyyy_mm_dd</value>
+		</property>
+	</bean>
+</beans>

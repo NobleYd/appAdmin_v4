@@ -1,0 +1,53 @@
+安装
+yum install mysql-server
+yum install mysql-devel
+1、使用 mysqld 脚本启动：
+/etc/init.d/mysqld start
+
+2、使用 mysqld 脚本停止：
+/etc/init.d/mysqld stop
+
+3、使用 mysqld 脚本重启：
+/etc/init.d/mysqld restart
+
+/etc/my.cnf 修改（或增加配置）为
+[mysqld]
+max_allowed_packet=5M
+
+mysql控制台中可以使用下面命令查看：
+show VARIABLES like '%max_allowed_packet%';
+
+关于密码修改（不知道为什么总是莫名其妙出问题）
+
+/etc 打开my.cnf文件，在[mysqld]的段中加上一句：skip-grant-tables 
+例如： [mysqld] datadir=/var/lib/mysql skip-grant-tables 保存
+
+重新启动mysql # /etc/init.d/mysql restart
+
+mysql
+
+mysql> USE mysql ;
+mysql> UPDATE user SET Password = password('new-password') WHERE User = 'root' ;
+完成(注意mysql中密码都是使用一个叫做password的函数加密的)
+
+将最初备份的原始my.cnf重新上传并覆盖服务器上的文件。/etc/my.cnf （skip-grant-tables删除 ）
+最后重新启动mysqld # /etc/init.d/mysqld restart
+
+输入mysql -u root -p就会提示输入新密码，输入刚才设置的秘密就可以进去，说明设置成功。
+
+
+
+可能问题：
+报错:1130-host ... is not allowed to connect to this MySql server
+
+解决方法：
+
+1。 改表法。
+
+可能是你的帐号不允许从远程登陆，只能在localhost。这个时候只要在localhost的那台电脑，登入mysql后，更改 "mysql" 数据库里的 "user" 表里的 "host" 项，从"localhost"改称"%"
+
+mysql -u root -pvmwaremysql>use mysql;
+
+mysql>update user set host = '%' where user = 'root';
+
+mysql>select host, user from user;

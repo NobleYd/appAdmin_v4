@@ -1,0 +1,39 @@
+﻿安装svn
+	yum install subversion
+创建svn仓库
+    cd /usr/local
+    mkdir svnRepository
+    svnadmin create /usr/local/svnRepository/ydapp0
+修改配置1
+    cd /usr/local/svnRepository/ydapp0/conf/
+    vim svnserve.conf
+    修改如下：
+        anon-access = none
+        auth-access = write
+        password-db = passwd
+        realm = ydapp0
+修改配置2
+    cd /usr/local/svnRepository/ydapp0/conf/
+    vim authz
+    修改如下：
+        [groups]
+        ydapp0 = nobleyd,test
+        [/]
+        @ydapp0 = rw
+        * = r
+修改配置3
+    cd /usr/local/svnRepository/ydapp0/conf/
+    vim passwd
+    修改如下：
+        [users]
+        nobleyd = noblepswd
+        test = test
+启动svn(-d表示后台运行，-r指定版本库目录)
+	svnserve -d -r /usr/local/svnRepository/
+
+停止
+ps -aux |grep svn 
+kill -9 xxyyzz
+
+
+

@@ -1,0 +1,4 @@
+# robots.txt for APP
+
+User-agent: *
+Sitemap: /sitemap/index.xml

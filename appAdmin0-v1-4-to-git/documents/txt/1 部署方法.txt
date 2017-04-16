@@ -1,0 +1,11 @@
+1:导入项目到eclipse。
+2:解决build path等问题{
+ 	将libs目录的jar加到build path，不会的话去网络上查查如何加，或者：选择jar，右键，buildpath，add to build path即可。
+	右键，属性，build path，选中jdk/jre的库，edit，替换为你的default jre，或者手工选择一个，推荐jdk7。（这个是因为项目有时候导入会出现jre找不到情况）
+}
+3:此处以mysql为例{
+	打开app.properties修改数据库配置（数据库名字、用户名、密码等信息）
+	打开com.app.buzz.WebServer.dbinstall中对应的数据库安装文件，修改其中的数据库配置（数据库名字、用户名、密码等信息）
+}
+4:运行**WebRun那个类，如果报错请查错，否则查看数据库是否建表成功，成功之后运行3中说道的数据库安装类进行初始化数据安装。
+5:正式使用。localhost

@@ -1,0 +1,26 @@
+下面是2016-5-1收录的endPoint对照表（具体请查看oss官网）
+
+经典网络
+Region中文名称 	Region英文表示 	外网Endpoint 	ECS访问的内网Endpoint
+华东 1 (杭州) 	oss-cn-hangzhou 	oss-cn-hangzhou.aliyuncs.com 	oss-cn-hangzhou-internal.aliyuncs.com
+华东 2 (上海) 	oss-cn-shanghai 	oss-cn-shanghai.aliyuncs.com 	oss-cn-shanghai-internal.aliyuncs.com
+华北 1 (青岛) 	oss-cn-qingdao 	oss-cn-qingdao.aliyuncs.com 	oss-cn-qingdao-internal.aliyuncs.com
+华北 2 (北京) 	oss-cn-beijing 	oss-cn-beijing.aliyuncs.com 	oss-cn-beijing-internal.aliyuncs.com
+华南 1 (深圳) 	oss-cn-shenzhen 	oss-cn-shenzhen.aliyuncs.com 	oss-cn-shenzhen-internal.aliyuncs.com
+香港数据中心 	oss-cn-hongkong 	oss-cn-hongkong.aliyuncs.com 	oss-cn-hongkong-internal.aliyuncs.com
+美国硅谷数据中心 	oss-us-west-1 	oss-us-west-1.aliyuncs.com 	oss-us-west-1-internal.aliyuncs.com
+美国弗吉尼亚数据中心 	oss-us-east-1 	oss-us-east-1.aliyuncs.com 	oss-us-east-1-internal.aliyuncs.com
+亚太（新加坡）数据中心 	oss-ap-southeast-1 	oss-ap-southeast-1.aliyuncs.com 	oss-ap-southeast-1-internal.aliyuncs.com
+
+VPC网络
+Region中文名称 	Region英文表示 	VPC网络Endpoint
+华东 1 (杭州) 	oss-cn-hangzhou 	vpc100-oss-cn-hangzhou.aliyuncs.com
+华东 2 (上海) 	oss-cn-shanghai 	vpc100-oss-cn-shanghai.aliyuncs.com
+华北 1 (青岛) 	oss-cn-qingdao 	vpc100-oss-cn-qingdao.aliyuncs.com
+华北 2 (北京) 	oss-cn-beijing 	vpc100-oss-cn-beijing.aliyuncs.com
+华南 1 (深圳) 	oss-cn-shenzhen 	vpc100-oss-cn-shenzhen.aliyuncs.com
+美国硅谷数据中心 	oss-us-west-1 	vpc100-oss-us-west-1.aliyuncs.com
+美国弗吉尼亚数据中心 	oss-us-east-1 	oss-us-east-1-internal.aliyuncs.com
+亚太（新加坡）数据中心 	oss-ap-southeast-1 	vpc100-oss-ap-southeast-1.aliyuncs.com
+
+请注意，endPoint和url前缀的区别：前者不带bucketName，后者是以bucketName为前缀的。

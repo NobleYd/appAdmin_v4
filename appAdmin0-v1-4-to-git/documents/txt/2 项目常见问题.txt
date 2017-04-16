@@ -1,0 +1,4 @@
+1：AccessDeniedFilter中import sun.misc.BASE64Decoder这句话报错！
+解决方式：右键项目-》属性-》java bulid path-》Jre System Library-》access rules-》resolution选择accessible，下面填上** 点击确定即可！
+
+2：項目启动，不报错，但没有出现 Initializing APPx.x RELEASE 等字样，则可能原因是conf目录没有配置为源码目录哦！请右键conf目录，build path-》点use as source folder即可重试！

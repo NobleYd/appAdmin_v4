@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<project name="app" basedir="." default="native2ascii">
+	<property name="src.dir" value="./../war/WEB-INF/language" />
+	<target name="native2ascii" description="native2ascii">
+		<native2ascii src="${src.dir}/admin" dest="${src.dir}/admin" includes="message.properties" ext="_zh_CN.properties" />
+		<native2ascii src="${src.dir}/common" dest="${src.dir}/common" includes="message.properties" ext="_zh_CN.properties" />
+	</target>
+</project>

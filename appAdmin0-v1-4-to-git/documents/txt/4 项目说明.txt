@@ -1,0 +1,12 @@
+appAdmin版本：1.0
+环境配置：
+	java版本：jdk1.7
+	服务器：嵌入式jetty
+	web version：2.5（servlet2.5）
+	默认数据库配置为：mysql
+
+相关框架版本：
+	spring - 3.2
+	springmvc - 3.2
+	hibernate - 3.6.10
+	jpa - 2.0

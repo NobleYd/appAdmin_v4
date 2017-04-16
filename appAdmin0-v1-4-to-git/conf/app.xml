@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+	<!-- ========================================基本设置======================================== -->
+
+	<!-- 网站名称（必填） -->
+	<setting name="siteName" value="appAPP" />
+	<!-- 网址（必填） -->
+	<setting name="siteUrl" value="http://localhost:8888" />
+
+	<!-- 网站Logo（必填） -->
+	<setting name="logo" value="/upload/image/logo.gif" />
+
+	<!-- 联系地址 -->
+	<setting name="address" value="中国上海" />
+	<!-- 联系电话 -->
+	<setting name="phone" value="400-1234567" />
+	<!-- 邮政编码 -->
+	<setting name="zipCode" value="123456" />
+	<!-- E-Mail -->
+	<setting name="email" value="test@163.com" />
+	<!-- 备案编号 -->
+	<setting name="certtext" value="xx ICP备12345678号" />
+
+	<!-- ========================================显示设置======================================== -->
+
+	<!-- 水印透明度（必填） -->
+	<setting name="watermarkAlpha" value="50" />
+	<!-- 水印图片 -->
+	<setting name="watermarkImage" value="/upload/image/watermark.png" />
+	<!-- 水印图片位置 -->
+	<setting name="watermarkPosition" value="bottomRight" />
+	<!-- -->
+	<setting name="bigDecimalScale" value="2" />
+	<setting name="bigDecimalRoundType" value="roundHalfUp" />
+
+	<!-- ========================================注册与安全======================================== -->
+
+	<!-- 验证码类型 -->
+	<setting name="captchaTypes" value="adminLogin,other" />
+	<!-- 账号锁定类型 -->
+	<setting name="accountLockTypes" value="admin" />
+	<!-- 连续登录失败最大次数（必填） -->
+	<setting name="accountLockCount" value="5" />
+	<!-- 自动解锁时间（必填） -->
+	<setting name="accountLockTime" value="10" />
+	<!-- 上传文件最大限制（必填） -->
+	<setting name="uploadMaxSize" value="10" />
+	<!-- 允许上传图片扩展名 -->
+	<setting name="uploadImageExtension" value="jpg,jpeg,bmp,gif,png" />
+	<!-- 允许上传Flash扩展名 -->
+	<setting name="uploadFlashExtension" value="swf,flv" />
+	<!-- 允许上传媒体扩展名 -->
+	<setting name="uploadMediaExtension" value="swf,flv,mp3,wav,avi,rm,rmvb" />
+	<!-- 允许上传文件扩展名 -->
+	<setting name="uploadFileExtension" value="jpg,jpeg,bmp,gif,png,swf,flv,mp3,wav,avi,rm,rmvb,zip,rar,7z,doc,docx,xls,xlsx,ppt,pptx" />
+	<!-- 图片上传路径（必填） -->
+	<setting name="imageUploadPath" value="/upload/image/${.now?string('yyyyMM')}/" />
+	<!-- Flash上传路径（必填） -->
+	<setting name="flashUploadPath" value="/upload/flash/${.now?string('yyyyMM')}/" />
+	<!-- 媒体上传路径（必填） -->
+	<setting name="mediaUploadPath" value="/upload/media/${.now?string('yyyyMM')}/" />
+	<!-- 文件上传路径（必填） -->
+	<setting name="fileUploadPath" value="/upload/file/${.now?string('yyyyMM')}/" />
+
+	<!-- ========================================邮件设置======================================== -->
+
+	<setting name="smtpFromMail" value="iamyidan@163.com" />
+	<setting name="smtpHost" value="smtp.163.com" />
+	<setting name="smtpPort" value="25" />
+	<setting name="smtpUsername" value="iamyidan@163.com" />
+	<setting name="smtpPassword" value="SHOULING" />
+
+	<!-- ========================================微信设置======================================== -->
+	<!-- 是否开启微信功能 -->
+	<setting name="isWeiXinEnabled" value="false" />
+	<setting name="weixinToken" value="weixinToken" />
+	<setting name="weixinAppId" value="weixinAppId" />
+	<setting name="weixinAppSecret" value="weixinAppSecret" />
+
+	<!-- ========================================其他设置======================================== -->
+	<!-- 是否开启开发模式 -->
+	<setting name="isDevelopmentEnabled" value="true" />
+	<!-- Cookie路径（必填） -->
+	<setting name="cookiePath" value="/" />
+	<!-- Cookie作用域 -->
+	<setting name="cookieDomain" value="" />
+	<!-- 是否开启CNZZ统计 -->
+	<setting name="isCnzzEnabled" value="false" />
+	<!-- CNZZ统计站点ID -->
+	<setting name="cnzzSiteId" value="" />
+	<!-- CNZZ统计密码 -->
+	<setting name="cnzzPassword" value="" />
+
+</app>

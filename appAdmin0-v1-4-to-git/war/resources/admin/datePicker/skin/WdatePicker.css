@@ -1,0 +1,9 @@
+/**-- WdatePicker 已经修正 去除高度等样式 **/
+.Wdate {
+	background: #fff url(datePicker.gif) no-repeat right !important;
+}
+
+.WdateFmtErr {
+	font-weight: bold;
+	color: red;
+}
