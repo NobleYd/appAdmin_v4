@@ -415,4 +415,5 @@ public class FilePlugin extends StoragePlugin implements ServletContextAware {
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190121230215308.jpg)
 ## 二维码生成
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190121230224944.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM4ODcyNTQ=,size_16,color_FFFFFF,t_70)
-以上仅仅是部分功能，很多列表页面比较类似就不重复了。
+
+- 以上仅仅是部分功能，很多列表页面比较类似就不重复了。
