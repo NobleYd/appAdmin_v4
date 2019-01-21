@@ -67,8 +67,8 @@
 	<setting name="smtpFromMail" value="iamyidan@163.com" />
 	<setting name="smtpHost" value="smtp.163.com" />
 	<setting name="smtpPort" value="25" />
-	<setting name="smtpUsername" value="iamyidan@163.com" />
-	<setting name="smtpPassword" value="SHOULING" />
+	<setting name="smtpUsername" value="xxx@163.com" />
+	<setting name="smtpPassword" value="xxx" />
 
 	<!-- ========================================微信设置======================================== -->
 	<!-- 是否开启微信功能 -->
